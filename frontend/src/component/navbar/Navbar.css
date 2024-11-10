@@ -1,0 +1,163 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh  5% 0vh 5%;  /* Added vh and percentage for responsiveness */
+  background-color: #f8f8f8;
+  margin-bottom: 1rem;
+}
+h2{
+  color: #45a049;
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 5vw;  /* Responsive logo width */
+  max-width: 100px;  /* Maximum width */
+  margin-right: 10px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 2rem;  /* Adjusted gap for better spacing */
+  margin-left: 0;
+}
+
+.nav-links li {
+  padding: 2px 2px;
+  position: relative;  /* Required to position the border correctly */
+}
+
+.nav-links li::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 3px;
+  background-color: #4CAF50;
+  transition: width 0.3s ease-in-out; /* Smooth transition for the width */
+}
+
+.nav-links li:hover::after {
+  width: 100%; /* On hover, the width grows to 100% */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1rem;  /* Responsive font size */
+}
+
+.download-button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 0.8vh 2vw;  /* Responsive padding */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #45a049;
+}
+
+.AdminPortal-h1 {
+  text-align: center;
+  font-size: 2rem;  /* Adjust heading size */
+}
+
+/* Navbar Right section */
+.navbar-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.AdminPortal-h1{
+  text-align: center;
+  font-size: 1.5rem;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 1vh 5%;
+  }
+
+  .logo img {
+    width: 10vw;  /* Adjust logo size for tablets */
+  }
+
+  .nav-links {
+    gap: 1.5rem;
+  }
+
+  .navbar-right {
+    gap: 1rem;  /* Adjust gap for navbar-right */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    
+    padding: 2vh 3%;
+    
+  }
+  h2{
+    display: none;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-left: 0;
+  }
+
+  .navbar-right {
+    
+    gap: 1rem;
+    
+  }
+
+  .download-button {
+    margin-top: 0rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 2vh 2%;
+    display: flex;
+  }
+
+  .logo img {
+    width: 10vw;  /* Adjust logo size for smaller screens */
+  }
+
+  .nav-links {
+    gap: 1rem;
+    display: flex;
+  }
+
+  .download-button {
+    padding: 0.8vh 3vw;  /* Adjust button size for smaller screens */
+  }
+
+  .navbar-right {
+    gap: 1rem;
+    display: flex;
+  }
+}
