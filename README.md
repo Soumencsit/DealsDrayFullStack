@@ -9,7 +9,7 @@ I've created a YouTube video that demonstrates how this project works, covering 
 [![Watch the video](![Screenshot 2024-11-10 232331](https://github.com/user-attachments/assets/b2dc6d49-cb59-491a-b29e-6fc3baeca278)
 )](https://youtu.be/Bt0oEUr3VTY)
 
-> **Note**: Click the image or [here](![Screenshot 2024-11-10 232331](https://github.com/user-attachments/assets/72ed7ecb-5a91-436d-8872-6efa76d04ce0)
+> **Note**: Click the image or [here](![Screenshot 2024-11-10 232331](https://github.com/user-attachments/assets/dcaf463e-200d-429f-9503-98f648f91b3e)
 ) to watch the video on YouTube.
 
 ## Features
